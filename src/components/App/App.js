@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
+import {HashRouter as Router, Route, Link} from 'react-router-dom';
+import { connect } from 'react-redux';
+import Feeling from '../Feeling/Feeling';
+import Understanding from '../Understanding/Understanding';
+import Supported from '../Supported/Supported';
+import Comments from '../Comments/Comments';
+import Review from '../Review/Review';
+import Success from '../Success/Success';
 
 class App extends Component {
   render() {
