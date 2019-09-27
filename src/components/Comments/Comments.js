@@ -29,7 +29,7 @@ class Comments extends Component {
             <input onChange={this.handleChange} value={this.state.comments}/>
             </div>
             <br/>
-            <Link to="/review"><button onClick={this.handleClick} disabled={this.state.button} >Next</button></Link>
+            <Link to="/review"><button onClick={this.handleClick} disabled={this.state.button}>Next</button></Link>
             </Router>
         );
     }
