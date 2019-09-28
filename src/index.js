@@ -21,6 +21,9 @@ const feedbackReducer = (state = [], action) => {
         case 'SET_COMMENTS': 
         state = [...state, action.payload]
         return state
+        case 'CLEAR': 
+        state = []
+        return state
         default: return state
     }
 }
