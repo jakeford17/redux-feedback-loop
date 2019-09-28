@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import './App.css';
-import {HashRouter as Router, Route, Link} from 'react-router-dom';
-import { connect } from 'react-redux';
+import {HashRouter as Router, Route} from 'react-router-dom';
 import Home from '../Home/Home';
 import Feeling from '../Feeling/Feeling';
 import Understanding from '../Understanding/Understanding';
@@ -10,6 +8,8 @@ import Supported from '../Supported/Supported';
 import Comments from '../Comments/Comments';
 import Review from '../Review/Review';
 import Success from '../Success/Success';
+// import { connect } from 'react-redux';
+//Redux not used in this component
 
 class App extends Component {
   render() {
