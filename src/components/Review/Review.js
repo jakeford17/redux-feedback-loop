@@ -1,8 +1,21 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import {HashRouter as Router, Route, Link} from 'react-router-dom';
+import axios from 'axios';
 
 class Review extends Component {
+
+    handleClick = (event) => {
+        console.log("SUBMIT CLICKED");
+        let feedBackData = this.props.reduxStore.feedbackReducer
+        axios.post('/feedback', feedBackData)
+        .then((response) => {
+            console.log("response", response);
+        }).catch(error => {
+            console.log("error: ", error);
+        })
+        this.props.dispatch({type: 'CLEAR'})
+    }
 
     render() {
         return (
