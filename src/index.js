@@ -30,7 +30,7 @@ const feedbackReducer = (state = [], action) => {
 
 const reduxStore = createStore(
     combineReducers({
-        feedbackReducer
+        feedbackReducer,
     }),
     applyMiddleware(logger)
 );
