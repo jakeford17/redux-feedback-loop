@@ -24,7 +24,7 @@ class Comments extends Component {
             <Router>
             <h2>Any additional comments?</h2>
             <div>
-            <input onChange={this.handleChange} value={this.state.comments}/>
+            <input className="commentInput" onChange={this.handleChange} value={this.state.comments}/>
             </div>
             <br/>
             <Link to="/review"><button onClick={this.handleClick}>Next</button></Link>

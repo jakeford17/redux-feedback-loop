@@ -27,6 +27,7 @@ class Review extends Component {
             <h3>How supported I feel on a scale from 1-5:</h3> {this.props.reduxStore.feedbackReducer[2]}<br/>
             <h3>Additional comments:</h3>
             <p>{this.props.reduxStore.feedbackReducer[3]}</p>
+            <br/>
             <Link to="/success"><button onClick={this.handleClick}>SUBMIT!</button></Link>
             </Router>
             </>

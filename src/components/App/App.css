@@ -1,19 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
 .App {
   text-align: center;
 }
 
 .App-header {
-  background-color: #033076;
+  background-color: #1DA195;
   min-height: 70px;
   padding: 20px;
-  color: white;
+  color: black;
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 30pt;
+  font-weight: bold;
 }
 
 .App-intro {
   font-size: large;
 }
 
+body{
+  font-family: 'Karla', sans-serif;
+}
+
+button{
+  font-family: 'Karla', sans-serif;
+  padding: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.commentInput{
+  width: 300px;
+  padding: 0 0 150px 0;
+  font-family: 'Karla', sans-serif;
+}
+
+.radioInput{
+  display: inline;
+  margin-left: 15px;
+}
+
+table {
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+td {
+  padding: 5px 30px;
+}
+
+th {
+  font-size: 15px;
+}
