@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import {HashRouter as Router, Link} from 'react-router-dom';
+//Did not need Redux on this page
 
 class Home extends Component {
 
@@ -13,9 +13,6 @@ class Home extends Component {
         );
     }
 }
+//On click of button, user will be directed to the beginning of the survery (Feeling.js)
 
-const mapStateToProps = (reduxStore) => ({
-    reduxStore
-})
-
-export default connect(mapStateToProps)(Home);
+export default Home;

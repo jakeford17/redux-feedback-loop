@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import {HashRouter as Router, Link} from 'react-router-dom';
 
-
 class Comments extends Component {
     state = {
         comments: '',
@@ -22,7 +21,8 @@ class Comments extends Component {
     render() {
         return (
             <Router>
-            <h2>Any additional comments?</h2>
+            <h2>Any additional comments?</h2>            
+            <h3>NOT REQUIRED</h3>
             <div>
             <input className="commentInput" onChange={this.handleChange} value={this.state.comments}/>
             </div>
@@ -32,6 +32,8 @@ class Comments extends Component {
         );
     }
 }
+//Input allows user to add comment onChange; the value of 'comments' in state changes with every keystroke
+//Next button allows user to go to Review.js whether or not comments are entered
 
 const mapStateToProps = (reduxStore) => ({
     reduxStore

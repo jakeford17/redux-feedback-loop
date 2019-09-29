@@ -85,3 +85,8 @@ Display all of the existing feedback at the route `/admin`. The most recently ad
 - Improve the styling of the app using Material-UI theme, cards, snackbars, buttons, nav bar, and icons, and anything else you'd like.
 - Add the ability to flag an existing feedback entry for further review on the /admin view
 - Deploy your project to Heroku -- you'll need to read the special instructions for building and deploying with these apps! 
+
+### IN MY OWN WORDS -- JAKE FORD
+
+- This project uses React and React Redux to create a multi-component feedback survey. After starting the survey (click to start on the Home page), the first three pages ask the user to evaluate how they feel, how well they understand the content, and how supported they feel on a scale from 1-5. The first three pages are required. After that there is an optional comments page, which leads to another page where the user can review their answers. After review, the feedback is sent (after Submit is clicked) using an Axios POST request (Node.js is used for the server-side framework of the app) to a database using a SQL query. There is also an Admin page that uses a Axios GET request to get info from the database and render it onto the DOM. I also used React Router (HashRouter via react-router-dom) to help route the user from page to page.
+- Comments were left on each page to explain what was happening.

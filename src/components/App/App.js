@@ -11,6 +11,7 @@ import Success from '../Success/Success';
 import Admin from '../Admin/Admin';
 // import { connect } from 'react-redux';
 //Redux not used in this component
+//Imported all components to use in routes
 
 class App extends Component {
   render() {
@@ -35,5 +36,7 @@ class App extends Component {
     );
   }
 }
+//Setting routes to be able to navigate through pages
+//Set default/home page to "Home", which will direct us to the first page of feedback survey
 
 export default App;

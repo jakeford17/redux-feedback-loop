@@ -34,6 +34,10 @@ class Review extends Component {
         );
     }
 }
+//This page grabs values from the Redux Store (state array index values in the feedback reducer) and displays them on the DOM
+//Once reviewed, user can click "Submit", which takes them to Success.js...
+//...This also triggers the handleClick function, which makes an axios POST to send feedback to the database...
+//...It also clears the state array in the feedback reducer after the POST is made to reset the fields
 
 const mapStateToProps = (reduxStore) => ({
     reduxStore

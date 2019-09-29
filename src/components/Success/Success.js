@@ -18,5 +18,6 @@ class Success extends Component {
 const mapStateToProps = (reduxStore) => ({
     reduxStore
 })
+//This page confirms to the user that their feedback was submitted them and also allows them to go home and submit more feedback
 
 export default connect(mapStateToProps)(Success);

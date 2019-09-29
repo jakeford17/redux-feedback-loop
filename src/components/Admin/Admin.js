@@ -50,6 +50,10 @@ class Admin extends Component {
     }
 }
 
+//This page runs a ComponentDidMount function (getFeedback) on page load that uses a GET to grab info from the database...
+//...After receiving the info, getFeedback feeds the info into the state...
+//...The info from the state is rendered onto the DOM in table form using mapping
+
 const mapStateToProps = (reduxStore) => ({
     reduxStore
 })
