@@ -6,13 +6,11 @@ import {HashRouter as Router, Link} from 'react-router-dom';
 class Comments extends Component {
     state = {
         comments: '',
-        button: true
     }
 
     handleChange = (event) => {
         this.setState({
             comments: event.target.value,
-            button: false
         })
     }
 
@@ -29,7 +27,7 @@ class Comments extends Component {
             <input onChange={this.handleChange} value={this.state.comments}/>
             </div>
             <br/>
-            <Link to="/review"><button onClick={this.handleClick} disabled={this.state.button}>Next</button></Link>
+            <Link to="/review"><button onClick={this.handleClick}>Next</button></Link>
             </Router>
         );
     }

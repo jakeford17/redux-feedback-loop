@@ -5,12 +5,14 @@ import {HashRouter as Router, Link} from 'react-router-dom';
 class Understanding extends Component {
 
     state = {
-        understanding: '1'
+        understanding: '',
+        button: true
     }
 
     handleChange = (event) => {
         this.setState({
-            understanding: event.target.value
+            understanding: event.target.value,
+            button: false
         })
     }
 
@@ -25,16 +27,14 @@ class Understanding extends Component {
             <h2>How well do you understand today's material?</h2>
             <h3>(1 is "I'm so lost!" and 5 is "I'm an expert!")</h3>
             <div>
-            <select onChange={this.handleChange} value={this.state.understanding}>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
+                <input type="radio" name="understanding" value="1" onChange={(event) => this.handleChange(event)} />1<br/>
+                <input type="radio" name="understanding" value="2" onChange={(event) => this.handleChange(event)} />2<br/>
+                <input type="radio" name="understanding" value="3" onChange={(event) => this.handleChange(event)} />3<br/>
+                <input type="radio" name="understanding" value="4" onChange={(event) => this.handleChange(event)} />4<br/>
+                <input type="radio" name="understanding" value="5" onChange={(event) => this.handleChange(event)} />5<br/>
             </div>
             <br/>
-            <Link to="/3"><button onClick={this.handleClick}>Next</button></Link>
+            <Link to="/3"><button onClick={this.handleClick} disabled={this.state.button}>Next</button></Link>
             </Router>
         );
     }
