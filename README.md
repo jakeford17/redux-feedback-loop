@@ -4,7 +4,6 @@ In this project, I created a feedback form modeled after Prime Digital Academy's
 ## Installation
 * `npm install`
 * In separate Terminal tabs `npm run client` and `npm run server`
-* The register functionality is commented out on the Log In page, but can be re-activated to make new users (users can also be added straight to the database); an admin level of 1 gives the user admin access and an admin level of 2 gives the user normal access
 
 ## Technologies Used
 Hockey DB used the following technologies: React, React-Redux, Node.js, Express.js, PostgreSQL, and CSS for styling.
