@@ -6,7 +6,7 @@ In this project, I created a feedback form modeled after Prime Digital Academy's
 * In separate Terminal tabs `npm run client` and `npm run server`
 
 ## Technologies Used
-Hockey DB used the following technologies: React, React-Redux, Node.js, Express.js, PostgreSQL, and CSS for styling.
+Redux Feedback Loop used the following technologies: React, React-Redux, Node.js, Express.js, PostgreSQL, and CSS for styling.
 
 ## Acknowledgement
 Thanks to Prime Digital Academy in Minneapolis and my classmates in Prime's Porta cohort for teaching me the technologies needed to make this project in a very short amount of time.
